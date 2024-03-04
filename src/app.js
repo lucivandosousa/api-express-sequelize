@@ -1,11 +1,19 @@
 const express = require('express');
-const { pessoaRoute } = require('./routes');
+const { 
+  pessoaRoute,
+  categoriaRoute,
+  cursoRoute,
+  matriculaRoute
+} = require('./routes');
 
 const app = express()
 
 app.use(
   express.json(),
-  pessoaRoute
+  pessoaRoute,
+  categoriaRoute,
+  cursoRoute,
+  matriculaRoute
 )
 
 app.get('/', (req, res) => {
