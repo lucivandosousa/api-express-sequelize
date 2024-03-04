@@ -94,6 +94,16 @@ class PessoaController {
       .send("Pessoa excluída.")
   }
 
+  static async buscarMatriculas(req, res) {
+    const { id } = req.params
+    const estudante = await Pessoa.findByPk(id)
+    const listaMatriculas = await estudante.getCursosMatriculados()
+
+    res
+      .status(200)
+      .json(listaMatriculas)
+  }
+
 }
 
 module.exports = PessoaController
