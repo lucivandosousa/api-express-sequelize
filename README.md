@@ -1,4 +1,4 @@
-# API de produtos usando Sequelize e SQLite
+# API de escola de cursos usando Sequelize e SQLite
 
 Esta é uma API construída usando o framework Express.js para Node.js e Sequelize com persistência em um banco relacional SQLite. A API simula operações básicas CRUD (Criar, Ler, Atualizar e Excluir) em um banco relacional.
 
